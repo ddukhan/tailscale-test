@@ -1,4 +1,4 @@
-# 🚀 Tailnet with GCP Kubernetes, subnet routers, exit nodes, even a Kubernetes API Proxy
+# 🚀 Tailnet with GCP K8S, subnet routers, exit nodes, even a Kubernetes API Proxy
 
 ## 🌟 Overview  
 
