@@ -46,11 +46,9 @@ cd tailscale-test
 
 ## 🤝 Contributing  
 
-Have improvements or want to report issues? Feel free to **open a PR or issue**.
-
-Have suggestions  or want to suggest coolness? Feel free to **DM**.
-
-I'm dying to try an MCP deployment with a **Tailscale Idp** (next).
+- Have improvements or want to report issues? Feel free to **open a PR or issue**.
+- Have suggestions  or want to suggest coolness? Feel free to **DM**.
+- I'm dying to try an MCP deployment with a **Tailscale Idp** (next).
 
 
 🔗 **Happy automating ** 🚀# tailscale-test
