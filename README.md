@@ -17,8 +17,9 @@ Both setups are designed to:
 
 ## 🔥 Choosing the Right Setup  
 
-| Feature           | Caddy Template  | Traefik Template  |
+| Feature          | Terraform      | YAML             |
 |------------------|----------------|------------------|
+| **K8s Cluster**  | ✅ Very simple | ⚡ More flexible |
 | **K8s Operator** | ✅ Very simple | ⚡ More flexible |
 | **Subnet Router**| ✅ Built-in    | ✅ Built-in |
 | **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
