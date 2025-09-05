@@ -1,4 +1,4 @@
-# 🚀 Tailnet GCP K8S, subnet routers, exit nodes, even a Kubernetes API Proxy
+# 🚀 Tailscale Network in GCP Connecting to Home and Office
 
 ## 🌟 Overview  
 
