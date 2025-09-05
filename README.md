@@ -1,4 +1,4 @@
-# 🚀 Tailscale Network in GCP Connecting to Home and Office
+# 🚀 Tailscale GCP Network for Home and Office
 
 ## 🌟 Overview  
 
