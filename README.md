@@ -4,7 +4,7 @@
 
 This repository provides **Four secure deployment templates** using:  
 - **Terraform** – Simple, automation to deploy k8s  
-- **helm** – Simple deployment of K8s Features
+- **Helm** – Simple deployment of K8s Features
 - **FastApi** - Simple App to test all the things  
 
 Both setups are designed to:  
@@ -19,15 +19,13 @@ Both setups are designed to:
 
 | Feature           | Caddy Template  | Traefik Template  |
 |------------------|----------------|------------------|
-| **Ease of Use**  | ✅ Very simple | ⚡ More flexible |
-| **Auto SSL**     | ✅ Built-in    | ✅ Built-in |
-| **Reverse Proxy** | ✅ Basic routing | ✅ Advanced routing & middleware |
+| **K8s Operator** | ✅ Very simple | ⚡ More flexible |
+| **Subnet Router**| ✅ Built-in    | ✅ Built-in |
+| **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
+| **K8s Ingress**  | ✅ Basic routing | ✅ Advanced routing & middleware |
+| **K8s API Srvr Proxy**| ✅ Basic routing | ✅ Advanced routing & middleware |
 | **Tailscale Support** | ✅ Yes | ✅ Yes |
 
-- Use **Caddy** if you want a **quick & simple** setup.  
-- Use **Traefik** if you need **more control** over routing and middleware.  
-
----
 
 ## 🚀 Quick Start  
 
