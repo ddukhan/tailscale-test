@@ -2,9 +2,10 @@
 
 ## 🌟 Overview  
 
-This repository provides **two secure deployment templates** for **n8n** using:  
-- **Caddy** – Simple, automatic SSL and reverse proxy setup  
-- **Traefik** – Advanced, flexible reverse proxy with automatic SSL  
+This repository provides **Four secure deployment templates** using:  
+- **Terraform** – Simple, automation to deploy k8s  
+- **helm** – Simple deployment of K8s Features
+- **FastApi** - Simple App to test all the things  
 
 Both setups are designed to:  
 - ✅ **Expose only webhooks to the public internet**  
