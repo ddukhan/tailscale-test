@@ -20,7 +20,7 @@ Setup is designed to:
 |------------------|----------------|------------------|
 | **K8s Cluster**  | ✅ Very simple |                  |
 | **K8s Operator** |                 | ⚡ More flexible |
-| **Subnet Router**| ✅ Built-in    | ✅ Built-in |
+| **Subnet Router**| ✅ Complicated    | ✅ Convenient |
 | **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
 | **K8s Ingress**  | ✅ Basic routing | ✅ Advanced routing & middleware |
 | **K8s API Srvr Proxy**| ✅ Basic routing | ✅ Advanced routing & middleware |
