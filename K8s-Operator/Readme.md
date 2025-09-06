@@ -12,13 +12,18 @@
 
 ## 🚀 Quick Start  
 
-### 1️⃣ Clone the repository  
+### 1️⃣ Access Control  ( Tailscale Console )
+- Copy/Paste the JSON below into your Access Controls JSON Editor
+- Pay Attention To Placement. Place toward the top with other tagOwners
 ```sh
-git clone https://github.com/telepilotco/n8n-secure-deployment.git
-cd n8n-secure-deployment/
+"tagOwners": {
+   "tag:k8s-operator": [],
+   "tag:k8s": ["tag:k8s-operator"],
+}
+
 ```
 
-### 2️⃣ Choose a setup and navigate into the folder  
+### 2️⃣ Create The OAuth Client ( Tailscale Console )  
 ```sh
 cd n8n-caddy-tailscale/   # or cd n8n-traefik-tailscale/
 ```
