@@ -41,7 +41,6 @@ cd tailscale-test/
 ## 📌 Summary  
 
 - ✅ **Secure Build Of Many Current Tailscale Features**  
-- ✅ 
 
 ---
 
