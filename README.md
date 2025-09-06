@@ -33,7 +33,7 @@ Both setups are designed to:
 ### 1️⃣ Clone the repository  
 ```sh
 git clone https://github.com/ddukhan/tailscale-test/
-cd tailscale-test
+cd tailscale-test/
 ```
 
 ---
