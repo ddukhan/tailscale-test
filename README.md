@@ -39,7 +39,13 @@ cd tailscale-test/
 
 ## 📌 Summary  
 
-- ✅ **Secure Build Of Many Current Tailscale Features**  
+- ✅ **Secure Build Of Many Current Tailscale Features**
+- ✅ **On This Network And Stealing All The Thunder is a GCP K8s Cluster**
+- ✅ **On This Network And Not Really Mentioned is a Win 11 Nuc**
+- ✅ **On This Network And Not Really Mentioned is a Win 11 Laptop**
+- ✅ **On This Network And Not Really Mentioned is a Ubuntu Nuc**
+- ✅ **On This Network And Not Really Mentioned is a MAC**
+- ✅ **On This Network And Not Really Mentioned is an IPad**
 
 ---
 
