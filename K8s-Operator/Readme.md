@@ -78,6 +78,7 @@ helm upgrade \
 > I tried creating a Terraform script that will create the OAuth Client for me. I found that the secret
 > doesn't get passed in as a variable. I bet I am misunderstanding. If anyone has other info or working
 > knowledge, please update.
+> - Trial Example: `tailnet-Oauth.tf` {Really gave up after having all work and can't find key}
 
 
 ## 📌 Verification  
