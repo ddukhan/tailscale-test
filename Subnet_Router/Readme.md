@@ -24,7 +24,9 @@ Setup:
 ```sh
 kubectl apply -f subnet.yaml
 ```
-
+### 2️⃣ Approve the subnet request 
+- Console - Machines - Tailscale-operator-router
+- Subnets -> Approve
 ---
 
 ## 📌 Summary  
@@ -38,12 +40,4 @@ kubectl apply -f subnet.yaml
 > even the management UI programmatically, I wonder if I can push an app, right from my laptop to my k8s
 > cluster. Will try that next.
 
-## 🤝 Contributing  
-
-- Have improvements or want to report issues? Feel free to **open a PR or issue**.
-- Have suggestions  or want to suggest coolness? Feel free to **DM**.
-- I'm dying to try an MCP deployment with a **Tailscale Idp** (next).
-
-
 🔗 **Happy automating ** 🚀# tailscale-test
-My tailscale network build with other stuff
