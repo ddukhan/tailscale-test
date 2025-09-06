@@ -7,11 +7,10 @@ This repository provides **Four secure deployment templates** using:
 - **Helm** – Simple deployment of K8s Features
 - **FastApi** - Simple App to test all the things  
 
-Both setups are designed to:  
-- ✅ **Expose only webhooks to the public internet**  
+Setup is designed to:  
+- ✅ **Expose only what you choose to the public internet**  
 - ✅ **Keep the n8n UI, login, and workflows private** using **Tailscale**  
 - ✅ **Automatically manage SSL certificates** via Let's Encrypt  
-- ✅ **Use Docker Compose for easy deployment**  
 
 ---
 
