@@ -12,25 +12,11 @@
 - **Ping Like You Didnt Care** - CLI `ping`  
 
 Both setups are designed to:  
-- ✅ **Expose only webhooks to the public internet**  
-- ✅ **Keep the n8n UI, login, and workflows private** using **Tailscale**  
-- ✅ **Automatically manage SSL certificates** via Let's Encrypt  
-- ✅ **Use Docker Compose for easy deployment**  
+- ✅ **Instantiate Yaml**  
+- ✅ **Approve the subnet request**  
+- ✅ **Honestly, Enjoy The Flexibility**    
 
 ---
-
-## 🔥 Choosing the Right Setup  
-
-| Feature          | Terraform      | YAML             |
-|------------------|----------------|------------------|
-| **K8s Cluster**  | ✅ Very simple |                  |
-| **K8s Operator** |                 | ⚡ More flexible |
-| **Subnet Router**| ✅ Built-in    | ✅ Built-in |
-| **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
-| **K8s Ingress**  | ✅ Basic routing | ✅ Advanced routing & middleware |
-| **K8s API Srvr Proxy**| ✅ Basic routing | ✅ Advanced routing & middleware |
-| **Tailscale Support** | ✅ Console | ✅ Console |
-
 
 ## 🚀 Quick Start  
 
@@ -47,6 +33,10 @@ cd tailscale-test/
 - ✅ **Secure Build Of Many Current Tailscale Features**  
 
 ---
+## 😕 Contemplations
+> [!NOTE] Today all K8s cluster apps have to go through Artifact Registry. Now that I can hit the endnodes and
+> even the management UI programmatically, I wonder if I can push an app, right from my laptop to my k8s
+> cluster. Will try that next.
 
 ## 🤝 Contributing  
 
