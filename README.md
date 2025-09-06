@@ -19,8 +19,8 @@ Both setups are designed to:
 
 | Feature          | Terraform      | YAML             |
 |------------------|----------------|------------------|
-| **K8s Cluster**  | ✅ Very simple | ⚡ More flexible |
-| **K8s Operator** | ✅ Very simple | ⚡ More flexible |
+| **K8s Cluster**  | ✅ Very simple |                  |
+| **K8s Operator** |                 | ⚡ More flexible |
 | **Subnet Router**| ✅ Built-in    | ✅ Built-in |
 | **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
 | **K8s Ingress**  | ✅ Basic routing | ✅ Advanced routing & middleware |
