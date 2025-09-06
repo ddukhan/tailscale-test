@@ -9,8 +9,8 @@ This repository provides **Four secure deployment templates** using:
 
 Setup is designed to:  
 - ✅ **Expose only what you choose to the public internet**  
-- ✅ **Keep the n8n UI, login, and workflows private** using **Tailscale**  
-- ✅ **Automatically manage SSL certificates** via Let's Encrypt  
+- ✅ **Tailscale as many tailnet features as are provable**  
+- ✅ **Learn more about Tailscale**  
 
 ---
 
