@@ -1,0 +1,8 @@
+{
+   "client" : [
+	{
+           "id" : "OAuth_Client_ID",
+           "secret" : "OAuth_Client_Secret"
+	}
+   ]
+}
