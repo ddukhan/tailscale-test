@@ -61,3 +61,8 @@ helm upgrade \
 ```
 
 ---
+
+## 📌 Verification  
+
+- ✅ **kubectl get namespaces** -- Verify tailscale namespace exists
+  
