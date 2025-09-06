@@ -73,6 +73,12 @@ helm upgrade \
 ```
 
 ---
+## 😒 Side Note
+> [!WARNING]
+> I tried creating a Terraform script that will create the OAuth Client for me. I found that the secret
+> doesn't get passed in as a variable. I bet I am misunderstanding. If anyone has other info or working
+> knowledge, please update.
+
 
 ## 📌 Verification  
 
