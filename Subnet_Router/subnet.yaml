@@ -1,0 +1,9 @@
+apiVersion: tailscale.com/v1alpha1
+kind: Connector
+metadata:
+  name: tailscale-operator-routes
+spec:
+  hostname: tailscale-operator-router
+  subnetRouter:
+    advertiseRoutes:
+      - "10.80.0.0/14" # Replace with your cluster's Service CIDR
