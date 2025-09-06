@@ -13,6 +13,7 @@
 ## 🚀 Quick Start  
 
 ### 1️⃣ Access Control  ( Tailscale Console )
+- Console
 - Copy/Paste the JSON below into your Access Controls JSON Editor
 - Pay Attention To Placement. Place toward the top with other tagOwners
 ```sh
@@ -24,31 +25,39 @@
 ```
 
 ### 2️⃣ Create The OAuth Client ( Tailscale Console )  
+- Console
+- Settings
+- OAuth clients
+- Set the  📌**devices core** to write
+- Set the  📌**Auth Keys** to write
+- Save the **Client ID** and **Client Secret** You need this
+
+### 3️⃣ Add The Taiscale Helm Repo
+- CLI from where ever you run Helm
 ```sh
-cd n8n-caddy-tailscale/   # or cd n8n-traefik-tailscale/
+helm repo add tailscale https://pkgs.tailscale.com/helmcharts
 ```
 
-### 3️⃣ Configure environment variables  
-Edit `.env` to set up domains, Tailscale settings, and n8n configurations.
-
-### 4️⃣ Deploy the setup  
+### 4️⃣ Update Your Local Helm Cache 
+- CLI from where ever you run Helm
 ```sh
-sh start.sh
+helm repo update
+```
+
+### 5️⃣ Install the Operator  
+- CLI from where ever you run Helm
+- This step takes several minutes with zero output until failure or success
+- Fill in OAuth client ID and OAuth client secret from step 2
+```sh
+helm upgrade \
+  --install \
+  tailscale-operator \
+  tailscale/tailscale-operator \
+  --namespace=tailscale \
+  --create-namespace \
+  --set-string oauth.clientId="<OAauth client ID>" \
+  --set-string oauth.clientSecret="<OAuth client secret>" \
+  --wait
 ```
 
 ---
-
-## 📌 Summary  
-
-- ✅ **Secure n8n deployments with either Caddy or Traefik**  
-- ✅ **Public webhooks, private admin access via Tailscale**  
-- ✅ **Automatic SSL certificates with Let's Encrypt**  
-- ✅ **Docker-based setup for easy management**  
-
----
-
-## 🤝 Contributing  
-
-Have improvements or want to report issues? Feel free to **open a PR or issue**.  
-
-🔗 **Happy automating with n8n, Caddy, and Traefik!** 🚀
