@@ -27,6 +27,10 @@ kubectl apply -f subnet.yaml
 ### 2️⃣ Approve the subnet request 
 - Console - Machines - Tailscale-operator-router
 - Subnets -> Approve
+- Adding the following code in your ACL JSON block allows all subnets to be auto approved.
+```sh
+"autoApprovers": {"routes": ["autogroup:admin"]},
+```
 ---
 
 ## 📌 Summary  
