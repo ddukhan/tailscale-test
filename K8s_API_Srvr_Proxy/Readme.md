@@ -6,14 +6,12 @@
 
 - **Get Gcloud K8s Credentials Get the K8s cluster name and ...**
 - **YAML Script** – Kubectl apply the yaml  
-- **Console** – Approve the subnet.
-- **Ping Like You Didnt Care** - CLI `ping`  
+- **CLI** – Test. 
 
 Setup:  
-- ✅ **Get Gcloud K8s Credentials if you havent so far.**
+- ✅ **Get Gcloud K8s Credentials if you haven't so far.**
 - ✅ **Instantiate Yaml**  
-- ✅ **Approve the subnet request**  
-- ✅ **Honestly, Enjoy The Flexibility**    
+- ✅ **Test and Test**    
 
 ---
 
@@ -22,32 +20,35 @@ Setup:
 - CLI
 - This command provides no output.
 - It caches the credentials Helm will use.
-- All the Data is in the terraform script
+- All the Data is in the YAML script
 ```sh
 gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE_ID --project PROJECT_ID
 ```
 ### 1️⃣ Download and Install the YAML  
 ```sh
-kubectl apply -f subnet.yaml
+kubectl apply -f api-proxy-noath.yaml
 ```
-### 2️⃣ Approve the subnet request 
-- Console - Machines - Tailscale-operator-router
-- Subnets -> Approve
-- Adding the following code in your ACL JSON block allows all subnets to be auto approved.
+### 2️⃣ Test and Test
+- To Test
 ```sh
-"autoApprovers": {"routes": ["autogroup:admin"]},
+kubectl proxy
+```
+- The Kubectl proxy command returns the URL to use
+```sh
+curl http://localhost:8001/api/v1/pods
+```
+- returns the number of pods running as a JSON object
+```sh
+curl http://localhost:8001/api/v1/namespaces
 ```
 ---
 
 ## 📌 Summary  
 
-- ✅ **Ping your 10.x/8 network** -- Best is ping the Control Plane Private Endpoint  
-
+- ✅ **If your CURL command returns data, all is working**  
 ---
 ## 😕 Contemplations
 > [!NOTE]
-> Today all K8s cluster apps have to go through Artifact Registry. Now that I can hit the endnodes and
-> even the management UI programmatically, I wonder if I can push an app, right from my laptop to my k8s
-> cluster. Will try that next.
+> This is a very interesting function. Today, the norm. is pure API functionality that has to be coded into software. This is hard to dynamically build, even with frameworks. With this functionality and asynchronous libraries that interact with the underlying OS, a dev can rapidly build https:// calls using, for instance, Python's requests library or async to control Kubectl. Or at least make Kubectl visible. I wonder how far this proxy functionality extends. Can services be brought up and down? This is worth trying as a next step.
 
 🔗 **Happy automating ** 🚀# tailscale-test
