@@ -2,7 +2,7 @@
 
 ## 🌟 Overview  
 
-> **This is an important feature for anyone trying to embed their Kubernetes Cluster Controls or any other normally unreachable API endpoints into software that will service the public. This feature has to be carefully weighed and supported. It has the potential for misuse or unintended consequences. However, it could create a lot of freedom and tremendous power for downstream customers.**
+> **This is an important feature for anyone trying to embed their Kubernetes Cluster Controls or any other normally unreachable API endpoints into software that will serve the public. This feature has to be carefully weighed and supported. It has the potential for misuse or unintended consequences. However, it could create a lot of freedom and tremendous power for downstream customers.**
 
 - **Get Gcloud K8s Credentials Get the K8s cluster name and ...**
 - **YAML Script** – Kubectl apply the yaml  
@@ -20,7 +20,7 @@ Setup:
 - CLI
 - This command provides no output.
 - It caches the credentials Helm will use.
-- All the data is in the YAML script
+- All the data is in the HELM Chart
 ```sh
 gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE_ID --project PROJECT_ID
 ```
