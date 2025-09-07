@@ -2,32 +2,29 @@
 
 ## 🌟 Overview  
 
-> **This feature, I am not sure I understand. If you expose the subnet, you expose the cluster ingress. Perhaps this is when you dont want to expose the subnet. I enabled the feature, and Kubectl says it is on and functioning, but I am not certain how to test it vs. subnet routing.**
-
-- **YAML Script** – Kubectl apply the yaml    
+> **This feature, I am not sure I understand. If you expose the subnet, you expose the cluster ingress.
+> Perhaps this is when you dont want to expose the subnet. I enabled the feature, and Kubectl says it is on
+> and functioning, but I am not certain how to test it vs. subnet routing.** 
 
 Setup:  
-- ✅ **Instantiate Yaml**  
-- ✅ **Approve the subnet request**  
-- ✅ **Honestly, Enjoy The Flexibility**    
+- ✅ **Get Gcloud K8s Cluster Credentials**
+- ✅ **Instantiate Yaml**      
 
 ---
 
 ## 🚀 Quick Start  
-
-### 1️⃣ Download and Install the YAML  
+### 1️⃣ Get Gcloud K8s Cluster Credentials
+- CLI
+- This command provides no output.
+- It caches the credentials Helm will use.
+- All the Data is in the terraform script
 ```sh
-kubectl apply -f subnet.yaml
+gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE_ID --project PROJECT_ID
 ```
-### 2️⃣ Approve the subnet request 
-- Console - Machines - Tailscale-operator-router
-- Subnets -> Approve
-- Adding the following code in your ACL JSON block allows all subnets to be auto approved.
+### 2️⃣ Download and Install the YAML  
 ```sh
-"autoApprovers": {"routes": ["autogroup:admin"]},
+kubectl apply -f ingress.yaml
 ```
----
-
 ## 📌 Summary  
 
 - ✅ **Ping your 10.x/8 network** -- Best is ping the Control Plane Private Endpoint  
