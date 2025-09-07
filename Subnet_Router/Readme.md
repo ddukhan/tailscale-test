@@ -7,11 +7,13 @@
 > is complete, this wastes resources, time, and money. Attach a ___Tailscale K8s Operator___ and expose the
 > Subnet and http/https/ping to your heart's content.**
 
+- **Get Gcloud K8s Credentials Get the K8s cluster name and ...**
 - **YAML Script** – Kubectl apply the yaml  
 - **Console** – Approve the subnet.
 - **Ping Like You Didnt Care** - CLI `ping`  
 
 Setup:  
+- ✅ **Get Gcloud K8s Credentials if you havent so far.**
 - ✅ **Instantiate Yaml**  
 - ✅ **Approve the subnet request**  
 - ✅ **Honestly, Enjoy The Flexibility**    
@@ -19,7 +21,10 @@ Setup:
 ---
 
 ## 🚀 Quick Start  
-
+### 1️⃣ Download and Install the YAML  
+```sh
+kubectl apply -f subnet.yaml
+```
 ### 1️⃣ Download and Install the YAML  
 ```sh
 kubectl apply -f subnet.yaml
