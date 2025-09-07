@@ -17,7 +17,7 @@ Setup:
 - CLI
 - This command provides no output.
 - It caches the credentials Helm will use.
-- All the Data is in the HELM Chart
+- All the Data is in the YAML script
 ```sh
 gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE_ID --project PROJECT_ID
 ```
