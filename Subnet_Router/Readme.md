@@ -21,9 +21,13 @@ Setup:
 ---
 
 ## 🚀 Quick Start  
-### 1️⃣ Download and Install the YAML  
+### 0️⃣ Get Gcloud K8s Cluster Credentials
+- CLI
+- This command provides no output.
+- It caches the credentials Helm will use.
+- All the Data is in the terraform script
 ```sh
-kubectl apply -f subnet.yaml
+gcloud container clusters get-credentials CLUSTER_NAME --zone ZONE_ID --project PROJECT_ID
 ```
 ### 1️⃣ Download and Install the YAML  
 ```sh
