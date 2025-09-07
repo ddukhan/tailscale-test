@@ -1,15 +1,10 @@
-# 🚀 Tailscale Subnet Routing
+# 🚀 Tailscale Cluster Ingress
 
 ## 🌟 Overview  
 
-> **This is my favorite part of this entire effort. The 10.x/8 network within GCP K8s is exceedingly
-> hidden. Google wants you to reference it through the public IP NAT and across Load Balancers. Until testing
-> is complete, this wastes resources, time, and money. Attach a ___Tailscale K8s Operator___ and expose the
-> Subnet and http/https/ping to your heart's content.**
+> **This feature, I am not sure I understand. If you expose the subnet, you expose the cluster ingress. Perhaps this is when you dont want to expose the subnet. I enabled the feature, and Kubectl says it is on and functioning, but I am not certain how to test it vs. subnet routing.**
 
-- **YAML Script** – Kubectl apply the yaml  
-- **Console** – Approve the subnet.
-- **Ping Like You Didnt Care** - CLI `ping`  
+- **YAML Script** – Kubectl apply the yaml    
 
 Setup:  
 - ✅ **Instantiate Yaml**  
