@@ -27,13 +27,16 @@ kubectl apply -f ingress.yaml
 ```
 ## 📌 Summary  
 
-- ✅ **Ping your 10.x/8 network** -- Best is ping the Control Plane Private Endpoint  
-
+- ✅ **Test By Showing the Ingress**
+- You will see the ingress is attached to Tailscale class 
+- But its not specific to any hosts or any IP or Load Balancer.
+- I need to play more with this or find more documentation about the goal of this feature.
+```sh
+kubectl get ingress
+```
 ---
 ## 😕 Contemplations
 > [!NOTE]
-> Today all K8s cluster apps have to go through Artifact Registry. Now that I can hit the endnodes and
-> even the management UI programmatically, I wonder if I can push an app, right from my laptop to my k8s
-> cluster. Will try that next.
+> Not sure about this one.
 
 🔗 **Happy automating ** 🚀# tailscale-test
