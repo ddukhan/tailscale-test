@@ -21,9 +21,9 @@ Setup is designed to:
 | **K8s Cluster**  | ✅ Very simple |                  |
 | **K8s Operator** |                 | ⚡ More flexible |
 | **Subnet Router**| ✅ Complicated    | ✅ Convenient |
-| **Exit Node**    | ✅ Basic routing | ✅ Advanced routing & middleware |
-| **K8s Ingress**  | ✅ Basic routing | ✅ Advanced routing & middleware |
-| **K8s API Srvr Proxy**| ✅ Basic routing | ✅ Advanced routing & middleware |
+| **Exit Node**    | |  |
+| **K8s Ingress**  |  | ✅ Advanced routing & middleware |
+| **K8s API Srvr Proxy**|  | ✅ Advanced routing & middleware |
 | **Tailscale Support** | ✅ Console | ✅ Console |
 
 
@@ -46,7 +46,8 @@ cd tailscale-test/
 - ✅ **On This Network And Not Really Mentioned is a Ubuntu Nuc**
 - ✅ **On This Network And Not Really Mentioned is a MAC**
 - ✅ **On This Network And Not Really Mentioned is an IPad**
-
+- 🤬 **Excuse the Drawing. I can not find my Visio stencils**
+- PDF Conceptual Tailnet Drawing included.
 ---
 
 ## 🤝 Contributing  
